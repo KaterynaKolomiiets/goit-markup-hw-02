@@ -2,6 +2,7 @@
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
+    --accent-color-hover: #188CE8;
     --white-color: #ffffff;
     --background-color-primary: #ffffff;
     --background-color-secondary: #F5F4FA;
@@ -89,20 +90,33 @@ h1.hero-title{
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
-.button-primary{
-    background-color: var(--accent-color);
-    color: var(--white-color);
+.button{
+    background-color:var(--background-color-secondary);
+    color: var(--secondary-text-color);
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    font-size:16px;
+    line-height:1.16;
+    text-align: center;
+    letter-spacing:0.03em;
 }
-.button-primary:hover{
+.button:hover,
+.button:focus{
     cursor:pointer;
 }
-.hero-button{
+.button.hero-button{
+    background-color: var(--accent-color);
+    color: var(--white-color);
     font-family: var(--font-roboto);
     font-weight: 700;
     font-size:16px;
     line-height:1.8;
     text-align:center;
     letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus{
+    background-color: var(--accent-color-hover);
 }
 .our-team{
     background-color: var(--background-color-secondary);
@@ -134,21 +148,9 @@ address{
 
 /* styles for portfolion */
 
-.button{
-    background-color:var(--background-color-secondary);
-    color: var(--secondary-text-color);
-    font-family: var(--font-roboto);
-    font-weight: 500;
-    font-size:16px;
-    line-height:1.16;
-    text-align: center;
-    letter-spacing:0.03em;
-}
-.button:hover,
-.button:focus{
-    background-color:var(--accent-color);
+.active{
+    background-color: var(--accent-color);
     color: var(--white-color);
-    cursor:pointer;
 }
 h2.portfolio-item-header{
     font-size:18px;
