@@ -1,6 +1,7 @@
 :root{
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
+    --tertiary-text-color: #ffffff99;
     --accent-color: #2196F3;
     --accent-color-hover: #188CE8;
     --white-color: #ffffff;
@@ -49,6 +50,9 @@ a.logo{
 }
 .link:hover,
 .link:focus{
+    color: var(--accent-color);
+}
+.link.active-tab{
     color: var(--accent-color);
 }
 nav .link {
@@ -103,6 +107,8 @@ h1.hero-title{
 .button:hover,
 .button:focus{
     cursor:pointer;
+    background-color: var(--accent-color);
+    color: var(--white-color)
 }
 .button.hero-button{
     background-color: var(--accent-color);
@@ -145,13 +151,13 @@ address{
 .street-address{
     color: var(--white-color);
 }
-
-/* styles for portfolion */
-
-.active{
-    background-color: var(--accent-color);
-    color: var(--white-color);
+address > .link{
+    color: var(--tertiary-text-color);
+    letter-spacing: 0.03em;
 }
+
+/* styles for portfolio */
+
 h2.portfolio-item-header{
     font-size:18px;
     line-height:2;
